@@ -7,7 +7,7 @@ hw5:  hw5.o power.o
 	$(CXX) hw5.o power.o -o hw5
 
 power.o: power.s
-	$(GXX) power.s
+	$(CXX) power.s -o power.o
 clean:
 	rm *.o *.exe hw5
 
